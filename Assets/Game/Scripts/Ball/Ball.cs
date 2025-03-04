@@ -25,11 +25,6 @@ public class Ball : MonoBehaviour
         OriginalPosition = transform.position;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
     private void BallThrown(SelectExitEventArgs args)
     {
         if(returning)
@@ -37,6 +32,7 @@ public class Ball : MonoBehaviour
             StopCoroutine(returnRoutine);
             returning = false;
         }
+        
         returnRoutine = StartCoroutine(ReturnBallIn(TimeToReturnBall));
     }
 

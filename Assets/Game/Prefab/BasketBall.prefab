@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3215093842195281143}
   m_Layer: 0
   m_Name: BasketBall
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123,6 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b954181541b8c04abd92109261056f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TimeToReturnBall: 5
 --- !u!54 &6760844330366927101
 Rigidbody:
   m_ObjectHideFlags: 0
