@@ -4,8 +4,10 @@ public class Net : MonoBehaviour
 {
     [SerializeField]
     private ParticleSystem Confetti;
+    private AudioSource audioSource;
     private void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
         Confetti.gameObject.SetActive(false);
     }
 
@@ -17,6 +19,7 @@ public class Net : MonoBehaviour
             Debug.Log("WIN!!!!!");
             Confetti.gameObject.SetActive(true);
             Confetti.Play();
+            audioSource.Play();
         }
     }
 }
