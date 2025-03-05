@@ -2,9 +2,11 @@ using UnityEngine;
 
 public class Net : MonoBehaviour
 {
-
+    [SerializeField]
+    private ParticleSystem Confetti;
     private void Awake()
     {
+        Confetti.gameObject.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -13,6 +15,8 @@ public class Net : MonoBehaviour
         {
             //trigger win here
             Debug.Log("WIN!!!!!");
+            Confetti.gameObject.SetActive(true);
+            Confetti.Play();
         }
     }
 }
