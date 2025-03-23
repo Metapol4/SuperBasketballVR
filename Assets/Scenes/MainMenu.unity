@@ -1086,6 +1086,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2046629159}
     m_Modifications:
+    - target: {fileID: 1906104356174757970, guid: d618d42b3f5b08040810a8952917a315, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -32.60002
+      objectReference: {fileID: 0}
     - target: {fileID: 2902337506658604140, guid: d618d42b3f5b08040810a8952917a315, type: 3}
       propertyPath: m_Name
       value: MainMenuContainer
@@ -1093,6 +1097,10 @@ PrefabInstance:
     - target: {fileID: 2902337506658604140, guid: d618d42b3f5b08040810a8952917a315, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5329639328909513614, guid: d618d42b3f5b08040810a8952917a315, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 38.5
       objectReference: {fileID: 0}
     - target: {fileID: 7424486449631791408, guid: d618d42b3f5b08040810a8952917a315, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1134,8 +1142,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7833190641189600601, guid: d618d42b3f5b08040810a8952917a315, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 102900000, guid: 2ec1870efe13feb47b19b06c06928962, type: 3}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8094959941293748388, guid: d618d42b3f5b08040810a8952917a315, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d618d42b3f5b08040810a8952917a315, type: 3}

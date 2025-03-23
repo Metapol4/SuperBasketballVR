@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEditor;
 using UnityEngine;
@@ -6,7 +7,7 @@ using UnityEngine.SceneManagement;
 [CreateAssetMenu(fileName = "GameHandleSO", menuName = "Scene Management/SceneLoader")]
 public class GameHandleSO : ScriptableObject
 {
-    
+
     public void PauseGame(bool bIsPaused)
     {
         Time.timeScale = bIsPaused ? 0 : 1;
@@ -15,7 +16,9 @@ public class GameHandleSO : ScriptableObject
     public void HandleNextLevel()
     {
         //Manager.Instance.Level logic to get the next one ...
+        LevelManager.Instance.LoadNextLevel();
     }
+
     public void QuitGame()
     {
 #if UNITY_EDITOR
