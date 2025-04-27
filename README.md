@@ -1,3 +1,24 @@
+**Expérience initiale**
+
+Steven : 
+    -Provennance d'un programme de jeu vidéo
+    -Déja développer d'autre application en réalité virtuelle
+    -Déjà développer d'autre jeu avec Unity
+
+Raphael: 
+    -Provennance d'un programme de jeu vidéo
+    -Déjà développer d'autre jeu avec Unity
+
+Marc-Antoine :
+    -Provennance d'un programme de jeu vidéo
+    -Déjà développer d'autre jeu avec Unity
+    -Déja développer d'autre application en réalité virtuelle
+
+Joris : 
+    -Provenance en informatique de base 
+    -Premier projet and Unity et en réalité virtuelle
+
+
 |**Tâche**                      |**Assigné à**      |
 |-------------------------------|-------------------|
 | Système d'intéraction pour VR | Marc-Antoine      |
