@@ -19,6 +19,7 @@ public class GameHandleSO : ScriptableObject
         LevelManager.Instance.LoadNextLevel();
     }
 
+    //Quit function to allow user to stop playing event in the editor
     public void QuitGame()
     {
 #if UNITY_EDITOR
@@ -28,6 +29,7 @@ public class GameHandleSO : ScriptableObject
 #endif
     }
     
+    //Give a valid SceneAsset to perform a async load and open level
     public async void OpenLevel(SceneAsset newScene)
     {
         if(newScene != null)

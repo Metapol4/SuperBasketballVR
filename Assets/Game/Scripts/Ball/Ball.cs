@@ -18,10 +18,11 @@ public class Ball : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         xRGrabInteractable = GetComponent<XRGrabInteractable>();
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        //Bind to a event to know when the input for calling the ball back is trigger
         xRGrabInteractable.selectExited.AddListener(BallThrown);
+        //Get spawning position of the ball to return it there
         OriginalPosition = transform.position;
     }
 

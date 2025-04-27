@@ -27,6 +27,7 @@ public class LevelManager : MonoBehaviour
 
     public void LoadNextLevel()
     {
+        //Increase the level index and then open the next level
         LevelIndex++;
         GameHandle.OpenLevel(SceneAssets[LevelIndex]);
     }

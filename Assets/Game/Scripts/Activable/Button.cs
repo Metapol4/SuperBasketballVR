@@ -7,20 +7,9 @@ public class Button : MonoBehaviour
 
     private bool IsActive = false;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-       
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter(Collider other)
     {
+        // Check if the object that entered the trigger is the ball and if the button is not already active
         if (other.gameObject.CompareTag("Ball") && !IsActive)
         {
             if(ObjectToActivate)

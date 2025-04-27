@@ -17,6 +17,7 @@ public class Net : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        // Check if the object that entered the trigger is the ball and the trigger end level logic
         if (other.gameObject.CompareTag("Ball"))
         {
             //trigger win here
